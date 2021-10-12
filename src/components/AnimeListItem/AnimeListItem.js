@@ -24,18 +24,14 @@ const AnimeListItem = ({
               }
               type='button'
               aria-label='Кнопка для лайков'
-              onClick={
-                anime.isLiked
-                  ? () => animeRemoveLike(anime.id)
-                  : () => animeAddedLike(anime.id)
-              }
+              onClick={anime.isLiked ? animeRemoveLike : animeAddedLike}
             ></button>
             {!anime.isLiked && (
               <button
                 className='card__remove-button'
                 type='button'
                 aria-label='Кнопка для Удаления'
-                onClick={() => animeRemove(anime.id)}
+                onClick={animeRemove}
               />
             )}
           </div>

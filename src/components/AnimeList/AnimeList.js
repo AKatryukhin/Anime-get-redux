@@ -23,12 +23,12 @@ import ErrorIndicator from '../ErrorIndicator/';
 import {
   LARGE_SCREEN,
   NARROW_SCREEN,
-  LARGE_SCREEN_MOVIES,
-  LARGE_SCREEN_MOVIES_MORE,
-  MEDIUM_SCREEN_MOVIES,
-  MEDIUM_SCREEN_MOVIES_MORE,
-  NARROW_SCREEN_MOVIES,
-  NARROW_SCREEN_MOVIES_MORE,
+  LARGE_SCREEN_CARDS,
+  LARGE_SCREEN_CARDS_MORE,
+  MEDIUM_SCREEN_CARDS,
+  MEDIUM_SCREEN_CARDS_MORE,
+  NARROW_SCREEN_CARDS,
+  NARROW_SCREEN_CARDS_MORE,
 } from '../../utils/constants';
 
 export function AnimeList(props) {
@@ -51,16 +51,16 @@ export function AnimeList(props) {
   useEffect(() => {
     function getSize() {
       if (size >= LARGE_SCREEN) {
-        animeQuantity(LARGE_SCREEN_MOVIES);
-        animeAddCards(LARGE_SCREEN_MOVIES_MORE);
+        animeQuantity(LARGE_SCREEN_CARDS);
+        animeAddCards(LARGE_SCREEN_CARDS_MORE);
       }
       if (size < LARGE_SCREEN && size > NARROW_SCREEN) {
-        animeQuantity(MEDIUM_SCREEN_MOVIES);
-        animeAddCards(MEDIUM_SCREEN_MOVIES_MORE);
+        animeQuantity(MEDIUM_SCREEN_CARDS);
+        animeAddCards(MEDIUM_SCREEN_CARDS_MORE);
       }
       if (size <= NARROW_SCREEN) {
-        animeQuantity(NARROW_SCREEN_MOVIES);
-        animeAddCards(NARROW_SCREEN_MOVIES_MORE);
+        animeQuantity(NARROW_SCREEN_CARDS);
+        animeAddCards(NARROW_SCREEN_CARDS_MORE);
       }
     }
     getSize();

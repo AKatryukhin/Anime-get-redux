@@ -1,0 +1,15 @@
+.error {
+  display: flex;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(119, 185, 32);
+  margin: auto;
+}
+
+.error__title {
+  color: rgb(32, 32, 29);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+}

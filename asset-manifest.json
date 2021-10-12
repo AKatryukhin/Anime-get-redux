@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.fb626e8e.chunk.css",
+    "main.js": "./static/js/main.fab6c220.chunk.js",
+    "main.js.map": "./static/js/main.fab6c220.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.9a2a2b03.js",
+    "runtime-main.js.map": "./static/js/runtime-main.9a2a2b03.js.map",
+    "static/js/2.06341988.chunk.js": "./static/js/2.06341988.chunk.js",
+    "static/js/2.06341988.chunk.js.map": "./static/js/2.06341988.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.fb626e8e.chunk.css.map": "./static/css/main.fb626e8e.chunk.css.map",
+    "static/js/2.06341988.chunk.js.LICENSE.txt": "./static/js/2.06341988.chunk.js.LICENSE.txt",
+    "static/media/AnimeListItem.css": "./static/media/icon-remove.578fadbd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a2a2b03.js",
+    "static/js/2.06341988.chunk.js",
+    "static/css/main.fb626e8e.chunk.css",
+    "static/js/main.fab6c220.chunk.js"
+  ]
+}

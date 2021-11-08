@@ -105,7 +105,7 @@ export function AnimeList(props) {
                   animeCollectionRemove(anime.id);
                   animeRemoveLike(anime.id);
                 }}
-                animeRemove={() => animeRemove(anime.id)}
+              animeRemove={() => animeRemove(anime.id)}
               />
             ))
           : animeList

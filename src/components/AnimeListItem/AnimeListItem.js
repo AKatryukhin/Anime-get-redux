@@ -37,8 +37,9 @@ const AnimeListItem = ({
           </div>
         </div>
         <div className='card__character-wrapper'>
+          <p className='card__character-title'>{attributes.description}</p>
           <img
-            className='card__character-image'
+            className={'card__character-image'}
             src={attributes.posterImage.medium}
             alt='Картинка'
           />

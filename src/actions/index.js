@@ -67,6 +67,7 @@ const animeDelFilterCollection = () => {
   };
 };
 
+
 export {
   animeLoaded,
   animeError,
@@ -77,5 +78,5 @@ export {
   animeRemove,
   animeFilterCollection,
   animeDelFilterCollection,
-  animeCollectionRemove
+  animeCollectionRemove,
 };

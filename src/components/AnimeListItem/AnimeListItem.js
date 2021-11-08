@@ -36,11 +36,13 @@ const AnimeListItem = ({
             )}
           </div>
         </div>
-        <img
-          className='card__image'
-          src={attributes.posterImage.medium}
-          alt='Картинка'
-        />
+        <div className='card__character-wrapper'>
+          <img
+            className='card__character-image'
+            src={attributes.posterImage.medium}
+            alt='Картинка'
+          />
+        </div>
       </div>
     </li>
   );

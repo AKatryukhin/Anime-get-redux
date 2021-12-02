@@ -1,21 +1,11 @@
 import React, { useEffect } from 'react';
 import AnimeListItem from '../AnimeListItem';
 import { connect } from 'react-redux';
+import * as actions from '../../actions/';
 
 import './AnimeList.css';
 import { AnimeServiceWrap, useWindowSize } from '../../hooks';
-import {
-  animeLoaded,
-  animeError,
-  animeQuantity,
-  animeAddCards,
-  animeAddedLike,
-  animeRemoveLike,
-  animeRemove,
-  animeFilterCollection,
-  animeDelFilterCollection,
-  animeCollectionRemove,
-} from '../../actions';
+
 import FilterCheckbox from '../FilterCheckbox/';
 import Preloader from '../Preloader';
 import ErrorIndicator from '../ErrorIndicator/';
@@ -105,7 +95,7 @@ export function AnimeList(props) {
                   animeCollectionRemove(anime.id);
                   animeRemoveLike(anime.id);
                 }}
-              animeRemove={() => animeRemove(anime.id)}
+                animeRemove={() => animeRemove(anime.id)}
               />
             ))
           : animeList
@@ -177,19 +167,4 @@ const mapStateToProps = ({
   };
 };
 
-const mapDispatchToProps = {
-  animeLoaded,
-  animeError,
-  animeQuantity,
-  animeAddCards,
-  animeRemoveLike: (id) => animeRemoveLike(id),
-  animeAddedLike: (id) => animeAddedLike(id),
-  animeRemove: (id) => animeRemove(id),
-  animeCollectionRemove: (id) => animeCollectionRemove(id),
-  animeFilterCollection,
-  animeDelFilterCollection,
-};
-
-export default AnimeServiceWrap()(
-  connect(mapStateToProps, mapDispatchToProps)(AnimeList)
-);
+export default AnimeServiceWrap()(connect(mapStateToProps, actions)(AnimeList));
